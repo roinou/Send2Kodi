@@ -15,6 +15,7 @@
 		9D04D065235110E500BBC9C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D04D063235110E500BBC9C1 /* LaunchScreen.storyboard */; };
 		9D04D070235110E500BBC9C1 /* Send2KodiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D06F235110E500BBC9C1 /* Send2KodiTests.swift */; };
 		9D04D07B235110E500BBC9C1 /* Send2KodiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D07A235110E500BBC9C1 /* Send2KodiUITests.swift */; };
+		9D04D08C235117F200BBC9C1 /* KodiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D08B235117F100BBC9C1 /* KodiConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9D04D076235110E500BBC9C1 /* Send2KodiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Send2KodiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D04D07A235110E500BBC9C1 /* Send2KodiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Send2KodiUITests.swift; sourceTree = "<group>"; };
 		9D04D07C235110E500BBC9C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D04D08B235117F100BBC9C1 /* KodiConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KodiConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		9D04D057235110E100BBC9C1 /* Send2Kodi */ = {
 			isa = PBXGroup;
 			children = (
+				9D04D08A235117DB00BBC9C1 /* Model */,
 				9D04D058235110E100BBC9C1 /* AppDelegate.swift */,
 				9D04D05A235110E100BBC9C1 /* SceneDelegate.swift */,
 				9D04D05C235110E100BBC9C1 /* ContentView.swift */,
@@ -134,6 +137,14 @@
 				9D04D07C235110E500BBC9C1 /* Info.plist */,
 			);
 			path = Send2KodiUITests;
+			sourceTree = "<group>";
+		};
+		9D04D08A235117DB00BBC9C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9D04D08B235117F100BBC9C1 /* KodiConfig.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D04D08C235117F200BBC9C1 /* KodiConfig.swift in Sources */,
 				9D04D059235110E100BBC9C1 /* AppDelegate.swift in Sources */,
 				9D04D05B235110E100BBC9C1 /* SceneDelegate.swift in Sources */,
 				9D04D05D235110E100BBC9C1 /* ContentView.swift in Sources */,
