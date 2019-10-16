@@ -10,36 +10,42 @@ import SwiftUI
 
 struct ContentView: View {
  
-        //@State private var config = KodiConfig(host: "osmc.local", port: 8080)
-        @EnvironmentObject var config: KodiConfig
-        
-        var body: some View {
-            VStack() {
-                Text("Kodi Settings")
-                    .font(.title)
-                    .fontWeight(.medium)
-                Divider()
-                HStack() {
-                    Text("Host")
-    //                Spacer()
-                    TextField("Host", text: $config.host)
-                }
-                Divider()
-                HStack() {
-                    Text("Port")
-    //                Spacer()
-                    TextField("0", value: $config.port, formatter: NumberFormatter())
-                }
-                Divider()
-                Spacer()
+    @EnvironmentObject var config: KodiConfig
+    
+    @EnvironmentObject var service: KodiService
+    
+    var body: some View {
+        VStack() {
+            Text("Kodi Settings")
+                .font(.title)
+                .fontWeight(.medium)
+            Divider()
+            HStack() {
+                Text("Host")
+                TextField("Host", text: $config.host)
             }
-            .padding(.all)
+            Divider()
+            HStack() {
+                Text("Port")
+                TextField("0", value: $config.port, formatter: NumberFormatter())
+            }
+            Divider()
+            Button(action: {
+                self.service.test()
+            }) {
+                Text("Test")
+            }
+            Spacer()
         }
+        .padding(.all)
     }
+}
 
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            ContentView()
-                .environmentObject(KodiConfig())
-        }
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        let conf = KodiConfig()
+        return ContentView()
+            .environmentObject(conf)
+            .environmentObject(KodiService(config: conf))
+    }
 }

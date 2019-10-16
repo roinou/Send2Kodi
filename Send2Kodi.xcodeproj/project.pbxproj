@@ -16,6 +16,9 @@
 		9D04D070235110E500BBC9C1 /* Send2KodiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D06F235110E500BBC9C1 /* Send2KodiTests.swift */; };
 		9D04D07B235110E500BBC9C1 /* Send2KodiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D07A235110E500BBC9C1 /* Send2KodiUITests.swift */; };
 		9D04D08C235117F200BBC9C1 /* KodiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D08B235117F100BBC9C1 /* KodiConfig.swift */; };
+		9D04D092235262DA00BBC9C1 /* KodiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D091235262DA00BBC9C1 /* KodiService.swift */; };
+		9D04D093235262DA00BBC9C1 /* KodiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D091235262DA00BBC9C1 /* KodiService.swift */; };
+		9D04D0972357B5CC00BBC9C1 /* KodiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D08B235117F100BBC9C1 /* KodiConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,7 @@
 		9D04D07A235110E500BBC9C1 /* Send2KodiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Send2KodiUITests.swift; sourceTree = "<group>"; };
 		9D04D07C235110E500BBC9C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D04D08B235117F100BBC9C1 /* KodiConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KodiConfig.swift; sourceTree = "<group>"; };
+		9D04D091235262DA00BBC9C1 /* KodiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KodiService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		9D04D057235110E100BBC9C1 /* Send2Kodi */ = {
 			isa = PBXGroup;
 			children = (
+				9D04D08D2352628C00BBC9C1 /* Service */,
 				9D04D08A235117DB00BBC9C1 /* Model */,
 				9D04D058235110E100BBC9C1 /* AppDelegate.swift */,
 				9D04D05A235110E100BBC9C1 /* SceneDelegate.swift */,
@@ -145,6 +150,14 @@
 				9D04D08B235117F100BBC9C1 /* KodiConfig.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		9D04D08D2352628C00BBC9C1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9D04D091235262DA00BBC9C1 /* KodiService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +293,7 @@
 			files = (
 				9D04D08C235117F200BBC9C1 /* KodiConfig.swift in Sources */,
 				9D04D059235110E100BBC9C1 /* AppDelegate.swift in Sources */,
+				9D04D092235262DA00BBC9C1 /* KodiService.swift in Sources */,
 				9D04D05B235110E100BBC9C1 /* SceneDelegate.swift in Sources */,
 				9D04D05D235110E100BBC9C1 /* ContentView.swift in Sources */,
 			);
@@ -289,6 +303,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D04D0972357B5CC00BBC9C1 /* KodiConfig.swift in Sources */,
+				9D04D093235262DA00BBC9C1 /* KodiService.swift in Sources */,
 				9D04D070235110E500BBC9C1 /* Send2KodiTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

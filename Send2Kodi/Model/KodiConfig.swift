@@ -11,6 +11,5 @@ import Combine
 
 final class KodiConfig: ObservableObject {
     @Published var host: String = "osmc.local"
-    //@Published var port = "8080"
     @Published<Int> var port: Int = 80
 }
