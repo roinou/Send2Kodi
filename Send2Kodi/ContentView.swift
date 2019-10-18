@@ -15,19 +15,31 @@ struct ContentView: View {
     @EnvironmentObject var service: KodiService
     
     var body: some View {
-        VStack() {
-            Text("Kodi Settings")
+        
+        // proxy the text field String to allow on-the-fly set
+        let portProxy = Binding<String>(
+            get: { "\(self.config.port)" },
+            set: {
+                if let value = NumberFormatter().number(from: $0) {
+                    self.config.port = value.intValue
+                }
+            }
+        )
+        
+        return VStack() {
+            Text(verbatim: "Kodi Settings")
                 .font(.title)
                 .fontWeight(.medium)
             Divider()
             HStack() {
-                Text("Host")
+//                Text("Host")
                 TextField("Host", text: $config.host)
             }
             Divider()
             HStack() {
-                Text("Port")
-                TextField("0", value: $config.port, formatter: NumberFormatter())
+//                Text("Port")
+                TextField("Port", text: portProxy)
+                    .keyboardType(.asciiCapableNumberPad)
             }
             Divider()
             Button(action: {
