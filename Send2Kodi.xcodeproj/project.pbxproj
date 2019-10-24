@@ -19,6 +19,10 @@
 		9D04D092235262DA00BBC9C1 /* KodiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D091235262DA00BBC9C1 /* KodiService.swift */; };
 		9D04D093235262DA00BBC9C1 /* KodiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D091235262DA00BBC9C1 /* KodiService.swift */; };
 		9D04D0972357B5CC00BBC9C1 /* KodiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D08B235117F100BBC9C1 /* KodiConfig.swift */; };
+		9D04D09F235A68A100BBC9C1 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D04D09E235A68A100BBC9C1 /* Media.xcassets */; };
+		9D04D0A1235A68A200BBC9C1 /* ActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D0A0235A68A200BBC9C1 /* ActionRequestHandler.swift */; };
+		9D04D0A3235A68A200BBC9C1 /* Action.js in Resources */ = {isa = PBXBuildFile; fileRef = 9D04D0A2235A68A200BBC9C1 /* Action.js */; };
+		9D04D0A7235A68A200BBC9C1 /* SendYouTube2Kodi.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9D04D09C235A68A100BBC9C1 /* SendYouTube2Kodi.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,28 @@
 			remoteGlobalIDString = 9D04D054235110E100BBC9C1;
 			remoteInfo = Send2Kodi;
 		};
+		9D04D0A5235A68A200BBC9C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D04D04D235110E100BBC9C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D04D09B235A68A100BBC9C1;
+			remoteInfo = SendYouTube2Kodi;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9D04D0AB235A68A200BBC9C1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9D04D0A7235A68A200BBC9C1 /* SendYouTube2Kodi.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9D04D055235110E100BBC9C1 /* Send2Kodi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Send2Kodi.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +80,13 @@
 		9D04D07C235110E500BBC9C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D04D08B235117F100BBC9C1 /* KodiConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KodiConfig.swift; sourceTree = "<group>"; };
 		9D04D091235262DA00BBC9C1 /* KodiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KodiService.swift; sourceTree = "<group>"; };
+		9D04D09C235A68A100BBC9C1 /* SendYouTube2Kodi.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SendYouTube2Kodi.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D04D09E235A68A100BBC9C1 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		9D04D0A0235A68A200BBC9C1 /* ActionRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionRequestHandler.swift; sourceTree = "<group>"; };
+		9D04D0A2235A68A200BBC9C1 /* Action.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Action.js; sourceTree = "<group>"; };
+		9D04D0A4235A68A200BBC9C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D30C1BE236243DB006E3898 /* Send2Kodi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Send2Kodi.entitlements; sourceTree = "<group>"; };
+		9D30C1BF236248D0006E3898 /* SendYouTube2Kodi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SendYouTube2Kodi.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +111,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9D04D099235A68A100BBC9C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -88,6 +127,7 @@
 				9D04D057235110E100BBC9C1 /* Send2Kodi */,
 				9D04D06E235110E500BBC9C1 /* Send2KodiTests */,
 				9D04D079235110E500BBC9C1 /* Send2KodiUITests */,
+				9D04D09D235A68A100BBC9C1 /* SendYouTube2Kodi */,
 				9D04D056235110E100BBC9C1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,6 +138,7 @@
 				9D04D055235110E100BBC9C1 /* Send2Kodi.app */,
 				9D04D06B235110E500BBC9C1 /* Send2KodiTests.xctest */,
 				9D04D076235110E500BBC9C1 /* Send2KodiUITests.xctest */,
+				9D04D09C235A68A100BBC9C1 /* SendYouTube2Kodi.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,6 +146,7 @@
 		9D04D057235110E100BBC9C1 /* Send2Kodi */ = {
 			isa = PBXGroup;
 			children = (
+				9D30C1BE236243DB006E3898 /* Send2Kodi.entitlements */,
 				9D04D08D2352628C00BBC9C1 /* Service */,
 				9D04D08A235117DB00BBC9C1 /* Model */,
 				9D04D058235110E100BBC9C1 /* AppDelegate.swift */,
@@ -160,6 +202,18 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		9D04D09D235A68A100BBC9C1 /* SendYouTube2Kodi */ = {
+			isa = PBXGroup;
+			children = (
+				9D30C1BF236248D0006E3898 /* SendYouTube2Kodi.entitlements */,
+				9D04D09E235A68A100BBC9C1 /* Media.xcassets */,
+				9D04D0A0235A68A200BBC9C1 /* ActionRequestHandler.swift */,
+				9D04D0A2235A68A200BBC9C1 /* Action.js */,
+				9D04D0A4235A68A200BBC9C1 /* Info.plist */,
+			);
+			path = SendYouTube2Kodi;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -170,10 +224,12 @@
 				9D04D051235110E100BBC9C1 /* Sources */,
 				9D04D052235110E100BBC9C1 /* Frameworks */,
 				9D04D053235110E100BBC9C1 /* Resources */,
+				9D04D0AB235A68A200BBC9C1 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9D04D0A6235A68A200BBC9C1 /* PBXTargetDependency */,
 			);
 			name = Send2Kodi;
 			productName = Send2Kodi;
@@ -216,6 +272,23 @@
 			productReference = 9D04D076235110E500BBC9C1 /* Send2KodiUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		9D04D09B235A68A100BBC9C1 /* SendYouTube2Kodi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D04D0A8235A68A200BBC9C1 /* Build configuration list for PBXNativeTarget "SendYouTube2Kodi" */;
+			buildPhases = (
+				9D04D098235A68A100BBC9C1 /* Sources */,
+				9D04D099235A68A100BBC9C1 /* Frameworks */,
+				9D04D09A235A68A100BBC9C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SendYouTube2Kodi;
+			productName = SendYouTube2Kodi;
+			productReference = 9D04D09C235A68A100BBC9C1 /* SendYouTube2Kodi.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -237,6 +310,9 @@
 						CreatedOnToolsVersion = 11.0;
 						TestTargetID = 9D04D054235110E100BBC9C1;
 					};
+					9D04D09B235A68A100BBC9C1 = {
+						CreatedOnToolsVersion = 11.0;
+					};
 				};
 			};
 			buildConfigurationList = 9D04D050235110E100BBC9C1 /* Build configuration list for PBXProject "Send2Kodi" */;
@@ -255,6 +331,7 @@
 				9D04D054235110E100BBC9C1 /* Send2Kodi */,
 				9D04D06A235110E500BBC9C1 /* Send2KodiTests */,
 				9D04D075235110E500BBC9C1 /* Send2KodiUITests */,
+				9D04D09B235A68A100BBC9C1 /* SendYouTube2Kodi */,
 			);
 		};
 /* End PBXProject section */
@@ -281,6 +358,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D04D09A235A68A100BBC9C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D04D0A3235A68A200BBC9C1 /* Action.js in Resources */,
+				9D04D09F235A68A100BBC9C1 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +403,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9D04D098235A68A100BBC9C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D04D0A1235A68A200BBC9C1 /* ActionRequestHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -329,6 +423,11 @@
 			isa = PBXTargetDependency;
 			target = 9D04D054235110E100BBC9C1 /* Send2Kodi */;
 			targetProxy = 9D04D077235110E500BBC9C1 /* PBXContainerItemProxy */;
+		};
+		9D04D0A6235A68A200BBC9C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D04D09B235A68A100BBC9C1 /* SendYouTube2Kodi */;
+			targetProxy = 9D04D0A5235A68A200BBC9C1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -461,7 +560,9 @@
 		9D04D080235110E500BBC9C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Send2Kodi/Send2Kodi.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Send2Kodi/Preview Content\"";
 				DEVELOPMENT_TEAM = 7MT6YUNTY6;
@@ -481,7 +582,9 @@
 		9D04D081235110E500BBC9C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Send2Kodi/Send2Kodi.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Send2Kodi/Preview Content\"";
 				DEVELOPMENT_TEAM = 7MT6YUNTY6;
@@ -582,6 +685,46 @@
 			};
 			name = Release;
 		};
+		9D04D0A9235A68A200BBC9C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SendYouTube2Kodi/SendYouTube2Kodi.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7MT6YUNTY6;
+				INFOPLIST_FILE = SendYouTube2Kodi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = be.vershina.Send2Kodi.SendYouTube2Kodi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D04D0AA235A68A200BBC9C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SendYouTube2Kodi/SendYouTube2Kodi.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7MT6YUNTY6;
+				INFOPLIST_FILE = SendYouTube2Kodi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = be.vershina.Send2Kodi.SendYouTube2Kodi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -617,6 +760,15 @@
 			buildConfigurations = (
 				9D04D086235110E500BBC9C1 /* Debug */,
 				9D04D087235110E500BBC9C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D04D0A8235A68A200BBC9C1 /* Build configuration list for PBXNativeTarget "SendYouTube2Kodi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D04D0A9235A68A200BBC9C1 /* Debug */,
+				9D04D0AA235A68A200BBC9C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

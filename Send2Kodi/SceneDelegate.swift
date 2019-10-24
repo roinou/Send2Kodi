@@ -22,7 +22,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Create the SwiftUI view that provides the window contents.
         let contentView = ContentView()
         
-        let config = KodiConfig()
+        let userDefaults = UserDefaults(suiteName: "group.be.vershina.Send2Kodi") ?? .standard
+        let config = KodiConfig(userDefaults)
         let service: KodiService = .init(config: config)
 
         // Use a UIHostingController as window root view controller.

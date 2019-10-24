@@ -20,7 +20,7 @@ final class KodiConfig: ObservableObject {
 
     private let defaults: UserDefaults
 
-    init(defaults: UserDefaults = .standard) {
+    init(_ defaults: UserDefaults = .standard) {
         self.defaults = defaults
         
         defaults.register(defaults: [
