@@ -23,6 +23,9 @@
 		9D04D0A1235A68A200BBC9C1 /* ActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D0A0235A68A200BBC9C1 /* ActionRequestHandler.swift */; };
 		9D04D0A3235A68A200BBC9C1 /* Action.js in Resources */ = {isa = PBXBuildFile; fileRef = 9D04D0A2235A68A200BBC9C1 /* Action.js */; };
 		9D04D0A7235A68A200BBC9C1 /* SendYouTube2Kodi.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9D04D09C235A68A100BBC9C1 /* SendYouTube2Kodi.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9D052493236381EF0063CC05 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D052492236381EF0063CC05 /* ShareViewController.swift */; };
+		9D052496236381EF0063CC05 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D052494236381EF0063CC05 /* MainInterface.storyboard */; };
+		9D05249A236381EF0063CC05 /* Share2Kodi.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9D052490236381EF0063CC05 /* Share2Kodi.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,13 @@
 			remoteGlobalIDString = 9D04D09B235A68A100BBC9C1;
 			remoteInfo = SendYouTube2Kodi;
 		};
+		9D052498236381EF0063CC05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D04D04D235110E100BBC9C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D05248F236381EF0063CC05;
+			remoteInfo = Share2Kodi;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,6 +66,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				9D05249A236381EF0063CC05 /* Share2Kodi.appex in Embed App Extensions */,
 				9D04D0A7235A68A200BBC9C1 /* SendYouTube2Kodi.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -85,6 +96,11 @@
 		9D04D0A0235A68A200BBC9C1 /* ActionRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionRequestHandler.swift; sourceTree = "<group>"; };
 		9D04D0A2235A68A200BBC9C1 /* Action.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Action.js; sourceTree = "<group>"; };
 		9D04D0A4235A68A200BBC9C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D052490236381EF0063CC05 /* Share2Kodi.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Share2Kodi.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D052492236381EF0063CC05 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		9D052495236381EF0063CC05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		9D052497236381EF0063CC05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D05249E236381FF0063CC05 /* Share2Kodi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Share2Kodi.entitlements; sourceTree = "<group>"; };
 		9D30C1BE236243DB006E3898 /* Send2Kodi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Send2Kodi.entitlements; sourceTree = "<group>"; };
 		9D30C1BF236248D0006E3898 /* SendYouTube2Kodi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SendYouTube2Kodi.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,6 +134,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9D05248D236381EF0063CC05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -128,6 +151,7 @@
 				9D04D06E235110E500BBC9C1 /* Send2KodiTests */,
 				9D04D079235110E500BBC9C1 /* Send2KodiUITests */,
 				9D04D09D235A68A100BBC9C1 /* SendYouTube2Kodi */,
+				9D052491236381EF0063CC05 /* Share2Kodi */,
 				9D04D056235110E100BBC9C1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -139,6 +163,7 @@
 				9D04D06B235110E500BBC9C1 /* Send2KodiTests.xctest */,
 				9D04D076235110E500BBC9C1 /* Send2KodiUITests.xctest */,
 				9D04D09C235A68A100BBC9C1 /* SendYouTube2Kodi.appex */,
+				9D052490236381EF0063CC05 /* Share2Kodi.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -214,6 +239,17 @@
 			path = SendYouTube2Kodi;
 			sourceTree = "<group>";
 		};
+		9D052491236381EF0063CC05 /* Share2Kodi */ = {
+			isa = PBXGroup;
+			children = (
+				9D05249E236381FF0063CC05 /* Share2Kodi.entitlements */,
+				9D052492236381EF0063CC05 /* ShareViewController.swift */,
+				9D052494236381EF0063CC05 /* MainInterface.storyboard */,
+				9D052497236381EF0063CC05 /* Info.plist */,
+			);
+			path = Share2Kodi;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -230,6 +266,7 @@
 			);
 			dependencies = (
 				9D04D0A6235A68A200BBC9C1 /* PBXTargetDependency */,
+				9D052499236381EF0063CC05 /* PBXTargetDependency */,
 			);
 			name = Send2Kodi;
 			productName = Send2Kodi;
@@ -289,6 +326,23 @@
 			productReference = 9D04D09C235A68A100BBC9C1 /* SendYouTube2Kodi.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		9D05248F236381EF0063CC05 /* Share2Kodi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D05249D236381EF0063CC05 /* Build configuration list for PBXNativeTarget "Share2Kodi" */;
+			buildPhases = (
+				9D05248C236381EF0063CC05 /* Sources */,
+				9D05248D236381EF0063CC05 /* Frameworks */,
+				9D05248E236381EF0063CC05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Share2Kodi;
+			productName = Share2Kodi;
+			productReference = 9D052490236381EF0063CC05 /* Share2Kodi.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -313,6 +367,9 @@
 					9D04D09B235A68A100BBC9C1 = {
 						CreatedOnToolsVersion = 11.0;
 					};
+					9D05248F236381EF0063CC05 = {
+						CreatedOnToolsVersion = 11.0;
+					};
 				};
 			};
 			buildConfigurationList = 9D04D050235110E100BBC9C1 /* Build configuration list for PBXProject "Send2Kodi" */;
@@ -332,6 +389,7 @@
 				9D04D06A235110E500BBC9C1 /* Send2KodiTests */,
 				9D04D075235110E500BBC9C1 /* Send2KodiUITests */,
 				9D04D09B235A68A100BBC9C1 /* SendYouTube2Kodi */,
+				9D05248F236381EF0063CC05 /* Share2Kodi */,
 			);
 		};
 /* End PBXProject section */
@@ -367,6 +425,14 @@
 			files = (
 				9D04D0A3235A68A200BBC9C1 /* Action.js in Resources */,
 				9D04D09F235A68A100BBC9C1 /* Media.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D05248E236381EF0063CC05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D052496236381EF0063CC05 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +477,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9D05248C236381EF0063CC05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D052493236381EF0063CC05 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -429,6 +503,11 @@
 			target = 9D04D09B235A68A100BBC9C1 /* SendYouTube2Kodi */;
 			targetProxy = 9D04D0A5235A68A200BBC9C1 /* PBXContainerItemProxy */;
 		};
+		9D052499236381EF0063CC05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D05248F236381EF0063CC05 /* Share2Kodi */;
+			targetProxy = 9D052498236381EF0063CC05 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -438,6 +517,14 @@
 				9D04D064235110E500BBC9C1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9D052494236381EF0063CC05 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D052495236381EF0063CC05 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -725,6 +812,46 @@
 			};
 			name = Release;
 		};
+		9D05249B236381EF0063CC05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Share2Kodi/Share2Kodi.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7MT6YUNTY6;
+				INFOPLIST_FILE = Share2Kodi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = be.vershina.Send2Kodi.Share2Kodi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D05249C236381EF0063CC05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Share2Kodi/Share2Kodi.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7MT6YUNTY6;
+				INFOPLIST_FILE = Share2Kodi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = be.vershina.Send2Kodi.Share2Kodi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -769,6 +896,15 @@
 			buildConfigurations = (
 				9D04D0A9235A68A200BBC9C1 /* Debug */,
 				9D04D0AA235A68A200BBC9C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D05249D236381EF0063CC05 /* Build configuration list for PBXNativeTarget "Share2Kodi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D05249B236381EF0063CC05 /* Debug */,
+				9D05249C236381EF0063CC05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
