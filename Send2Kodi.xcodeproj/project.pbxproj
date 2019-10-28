@@ -26,6 +26,10 @@
 		9D052493236381EF0063CC05 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D052492236381EF0063CC05 /* ShareViewController.swift */; };
 		9D052496236381EF0063CC05 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D052494236381EF0063CC05 /* MainInterface.storyboard */; };
 		9D05249A236381EF0063CC05 /* Share2Kodi.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9D052490236381EF0063CC05 /* Share2Kodi.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9D5A9C6123679E400074519B /* KodiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D08B235117F100BBC9C1 /* KodiConfig.swift */; };
+		9D5A9C6223679E400074519B /* KodiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D08B235117F100BBC9C1 /* KodiConfig.swift */; };
+		9D5A9C6323679E440074519B /* KodiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D091235262DA00BBC9C1 /* KodiService.swift */; };
+		9D5A9C6423679E440074519B /* KodiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D091235262DA00BBC9C1 /* KodiService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -473,6 +477,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D5A9C6123679E400074519B /* KodiConfig.swift in Sources */,
+				9D5A9C6323679E440074519B /* KodiService.swift in Sources */,
 				9D04D0A1235A68A200BBC9C1 /* ActionRequestHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,6 +487,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D5A9C6223679E400074519B /* KodiConfig.swift in Sources */,
+				9D5A9C6423679E440074519B /* KodiService.swift in Sources */,
 				9D052493236381EF0063CC05 /* ShareViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
