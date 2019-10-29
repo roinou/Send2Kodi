@@ -95,10 +95,10 @@ class KodiService: ObservableObject {
 
     func extractYoutubeId(_ url: String) -> String? {
         // either https://youtu.be/z29x-ZjtXfY or https://www.youtube.com/watch?v=z29x-ZjtXfY&feature=share
-        let regex = try! NSRegularExpression(pattern: ".*/(watch\\?v=)?([^&/]*)(\\&.*)?")
+        let regex = try! NSRegularExpression(pattern: "https://(.*\\.)?yout.*/(watch\\?v=)?([^&/]+)(\\&.*)?")
         let matches = regex.matches(in: url, options: [], range: NSRange(location: 0, length: url.utf16.count))
         if let match = matches.first {
-            if let swiftRange = Range(match.range(at:2), in: url) {
+            if let swiftRange = Range(match.range(at:3), in: url) {
                 return String(url[swiftRange])
             }
         }
