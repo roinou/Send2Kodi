@@ -28,7 +28,7 @@ class ActionRequestHandler: NSObject, NSExtensionRequestHandling {
                             itemProvider.loadItem(forTypeIdentifier: "public.plain-text", options: nil, completionHandler: { (item, error) in
                                 
                                 let userDefaults = UserDefaults(suiteName: "group.be.vershina.Send2Kodi2") ?? .standard
-                                let config = KodiConfigService(userDefaults)
+                                let config = ConfigService(userDefaults)
                                 let kodiService = KodiService.init(config: config)
 
                                 if let youtubeId = kodiService.extractYoutubeId(item! as! String) {
@@ -68,7 +68,7 @@ class ActionRequestHandler: NSObject, NSExtensionRequestHandling {
             print("processing send 2 kodi with url: \(url)")
             
             let userDefaults = UserDefaults(suiteName: "group.be.vershina.Send2Kodi2") ?? .standard
-            let config = KodiConfigService(userDefaults)
+            let config = ConfigService(userDefaults)
             let kodiService = KodiService.init(config: config)
 
             if let youtubeId = kodiService.extractYoutubeId(url) {
