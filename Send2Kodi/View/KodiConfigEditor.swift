@@ -39,7 +39,6 @@ struct KodiConfigEditor: View {
                     .keyboardType(.asciiCapableNumberPad)
             }
             Divider()
-            Spacer()
         }
         .padding(.all)
     }

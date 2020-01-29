@@ -13,38 +13,24 @@ struct ContentView: View {
     @Environment(\.editMode) var mode
     @EnvironmentObject var config: KodiConfigService
     
-    @State var draftConfig = KodiConfig.default
-    
-    @State var currentConfig: KodiConfig
+    @State var draftKodiConfig = KodiConfig.default
+    @State var draftLMSConfig = LMSConfig.default
     
     var body: some View {
         return VStack() {
             HStack() {
                 if self.mode?.wrappedValue == .active {
                     Button("Cancel") {
-                        self.draftConfig = self.config.read()
+                        self.draftKodiConfig = self.config.read()
                         self.mode?.animation().wrappedValue = .inactive
                     }
                 }
                 Spacer()
                 EditButton()
             }
-            Text(verbatim: "Kodi Settings")
-                .font(.title)
-                .fontWeight(.medium)
+            KodiView(draftConfig: $draftKodiConfig)
             Divider()
-            if self.mode?.wrappedValue == .inactive {
-                KodiConfigSummary(config: currentConfig)
-            } else {
-                KodiConfigEditor(config: $draftConfig)
-                    .onAppear {
-                        self.draftConfig = self.config.read()
-                    }
-                    .onDisappear {
-                        self.currentConfig = self.draftConfig
-                        self.config.update(self.draftConfig)
-                    }
-            }
+            LMSView(draftConfig: $draftLMSConfig)
             Spacer()
         }
         .padding(.all)
@@ -54,7 +40,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         let conf = KodiConfigService()
-        return ContentView(currentConfig: .default)
+        return ContentView(draftKodiConfig: .default, draftLMSConfig: .default)
             .environmentObject(conf)
     }
 }

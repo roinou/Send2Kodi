@@ -24,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let service: KodiService = .init(config: config)
         
         // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView(currentConfig: config.read())
+        let contentView = ContentView(draftKodiConfig: config.read(), draftLMSConfig: config.read())
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {

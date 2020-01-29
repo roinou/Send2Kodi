@@ -36,6 +36,12 @@
 		9D5A9C6223679E400074519B /* KodiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D08B235117F100BBC9C1 /* KodiConfig.swift */; };
 		9D5A9C6323679E440074519B /* KodiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D091235262DA00BBC9C1 /* KodiService.swift */; };
 		9D5A9C6423679E440074519B /* KodiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D091235262DA00BBC9C1 /* KodiService.swift */; };
+		9DF5551F23E1E5E8009E5083 /* LMSConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5551E23E1E5E8009E5083 /* LMSConfig.swift */; };
+		9DF5552023E1E5E8009E5083 /* LMSConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5551E23E1E5E8009E5083 /* LMSConfig.swift */; };
+		9DF5552123E1E5E8009E5083 /* LMSConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5551E23E1E5E8009E5083 /* LMSConfig.swift */; };
+		9DF5552423E1E821009E5083 /* KodiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5552323E1E821009E5083 /* KodiView.swift */; };
+		9DF5552623E1EB03009E5083 /* LMSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5552523E1EB03009E5083 /* LMSView.swift */; };
+		9DF5552723E223F7009E5083 /* LMSConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5551E23E1E5E8009E5083 /* LMSConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +122,9 @@
 		9D05249E236381FF0063CC05 /* Share2Kodi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Share2Kodi.entitlements; sourceTree = "<group>"; };
 		9D30C1BE236243DB006E3898 /* Send2Kodi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Send2Kodi.entitlements; sourceTree = "<group>"; };
 		9D30C1BF236248D0006E3898 /* SendYouTube2Kodi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SendYouTube2Kodi.entitlements; sourceTree = "<group>"; };
+		9DF5551E23E1E5E8009E5083 /* LMSConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMSConfig.swift; sourceTree = "<group>"; };
+		9DF5552323E1E821009E5083 /* KodiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KodiView.swift; sourceTree = "<group>"; };
+		9DF5552523E1EB03009E5083 /* LMSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMSView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +195,7 @@
 			children = (
 				9D30C1BE236243DB006E3898 /* Send2Kodi.entitlements */,
 				9D04D08D2352628C00BBC9C1 /* Service */,
+				9DF5552223E1E6D2009E5083 /* View */,
 				9D04D08A235117DB00BBC9C1 /* Model */,
 				9D04D058235110E100BBC9C1 /* AppDelegate.swift */,
 				9D04D05A235110E100BBC9C1 /* SceneDelegate.swift */,
@@ -194,8 +204,6 @@
 				9D04D063235110E500BBC9C1 /* LaunchScreen.storyboard */,
 				9D04D066235110E500BBC9C1 /* Info.plist */,
 				9D04D060235110E500BBC9C1 /* Preview Content */,
-				9D03E5A723DB8C4900E33D2A /* KodiConfigEditor.swift */,
-				9D03E5AE23DBA4C600E33D2A /* KodiConfigSummary.swift */,
 			);
 			path = Send2Kodi;
 			sourceTree = "<group>";
@@ -230,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				9D04D08B235117F100BBC9C1 /* KodiConfig.swift */,
+				9DF5551E23E1E5E8009E5083 /* LMSConfig.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -264,6 +273,17 @@
 				9D052497236381EF0063CC05 /* Info.plist */,
 			);
 			path = Share2Kodi;
+			sourceTree = "<group>";
+		};
+		9DF5552223E1E6D2009E5083 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9D03E5A723DB8C4900E33D2A /* KodiConfigEditor.swift */,
+				9D03E5AE23DBA4C600E33D2A /* KodiConfigSummary.swift */,
+				9DF5552323E1E821009E5083 /* KodiView.swift */,
+				9DF5552523E1EB03009E5083 /* LMSView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -459,9 +479,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DF5551F23E1E5E8009E5083 /* LMSConfig.swift in Sources */,
 				9D04D08C235117F200BBC9C1 /* KodiConfig.swift in Sources */,
 				9D03E5AA23DB9B0800E33D2A /* KodiConfigService.swift in Sources */,
 				9D04D059235110E100BBC9C1 /* AppDelegate.swift in Sources */,
+				9DF5552423E1E821009E5083 /* KodiView.swift in Sources */,
+				9DF5552623E1EB03009E5083 /* LMSView.swift in Sources */,
 				9D04D092235262DA00BBC9C1 /* KodiService.swift in Sources */,
 				9D04D05B235110E100BBC9C1 /* SceneDelegate.swift in Sources */,
 				9D03E5AF23DBA4C600E33D2A /* KodiConfigSummary.swift in Sources */,
@@ -474,6 +497,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DF5552723E223F7009E5083 /* LMSConfig.swift in Sources */,
 				9D04D0972357B5CC00BBC9C1 /* KodiConfig.swift in Sources */,
 				9D03E5AB23DBA13700E33D2A /* KodiConfigService.swift in Sources */,
 				9D04D093235262DA00BBC9C1 /* KodiService.swift in Sources */,
@@ -496,6 +520,7 @@
 				9D5A9C6123679E400074519B /* KodiConfig.swift in Sources */,
 				9D03E5AC23DBA21E00E33D2A /* KodiConfigService.swift in Sources */,
 				9D5A9C6323679E440074519B /* KodiService.swift in Sources */,
+				9DF5552023E1E5E8009E5083 /* LMSConfig.swift in Sources */,
 				9D04D0A1235A68A200BBC9C1 /* ActionRequestHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,6 +532,7 @@
 				9D5A9C6223679E400074519B /* KodiConfig.swift in Sources */,
 				9D03E5AD23DBA22800E33D2A /* KodiConfigService.swift in Sources */,
 				9D5A9C6423679E440074519B /* KodiService.swift in Sources */,
+				9DF5552123E1E5E8009E5083 /* LMSConfig.swift in Sources */,
 				9D052493236381EF0063CC05 /* ShareViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
