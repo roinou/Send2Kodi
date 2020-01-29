@@ -10,7 +10,7 @@ import SwiftUI
 
 struct KodiView: View {
     
-    @EnvironmentObject var config: KodiConfigService
+    @EnvironmentObject var config: ConfigService
     @Environment(\.editMode) var mode
     
     @Binding var draftConfig: KodiConfig
@@ -39,6 +39,6 @@ struct KodiView: View {
 struct KodiView_Previews: PreviewProvider {
     static var previews: some View {
         KodiView(draftConfig: .constant(.default))
-            .environmentObject(KodiConfigService())
+            .environmentObject(ConfigService())
     }
 }

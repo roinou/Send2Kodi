@@ -11,7 +11,7 @@ import SwiftUI
 struct ContentView: View {
  
     @Environment(\.editMode) var mode
-    @EnvironmentObject var config: KodiConfigService
+    @EnvironmentObject var config: ConfigService
     
     @State var draftKodiConfig = KodiConfig.default
     @State var draftLMSConfig = LMSConfig.default
@@ -39,7 +39,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        let conf = KodiConfigService()
+        let conf = ConfigService()
         return ContentView(draftKodiConfig: .default, draftLMSConfig: .default)
             .environmentObject(conf)
     }

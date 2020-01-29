@@ -8,7 +8,7 @@
 
 import Foundation
 
-class KodiConfigService: ObservableObject {
+class ConfigService: ObservableObject {
     private enum Keys {
         static let host = "host"
         static let port = "port"

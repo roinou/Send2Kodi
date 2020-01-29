@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         
         let userDefaults = UserDefaults(suiteName: "group.be.vershina.Send2Kodi2") ?? .standard
-        let config = KodiConfigService(userDefaults)
+        let config = ConfigService(userDefaults)
         let service: KodiService = .init(config: config)
         
         // Create the SwiftUI view that provides the window contents.

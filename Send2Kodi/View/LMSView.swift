@@ -10,7 +10,7 @@ import SwiftUI
 
 struct LMSView: View {
     
-    @EnvironmentObject var config: KodiConfigService
+    @EnvironmentObject var config: ConfigService
     @Environment(\.editMode) var mode
     
     @Binding var draftConfig: LMSConfig

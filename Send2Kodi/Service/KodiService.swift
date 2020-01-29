@@ -11,12 +11,12 @@ import SwiftUI
 
 class KodiService: ObservableObject {
 
-    let config: KodiConfigService
+    let config: ConfigService
     
     private let session: URLSession
     private let decoder: JSONDecoder
 
-    init(config: KodiConfigService, session: URLSession = .shared, decoder: JSONDecoder = .init()) {
+    init(config: ConfigService, session: URLSession = .shared, decoder: JSONDecoder = .init()) {
         self.session = session
         self.decoder = decoder
         

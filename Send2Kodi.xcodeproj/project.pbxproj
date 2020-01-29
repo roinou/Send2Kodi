@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		9D03E5A823DB8C4900E33D2A /* KodiConfigEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D03E5A723DB8C4900E33D2A /* KodiConfigEditor.swift */; };
-		9D03E5AA23DB9B0800E33D2A /* KodiConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D03E5A923DB9B0800E33D2A /* KodiConfigService.swift */; };
-		9D03E5AB23DBA13700E33D2A /* KodiConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D03E5A923DB9B0800E33D2A /* KodiConfigService.swift */; };
-		9D03E5AC23DBA21E00E33D2A /* KodiConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D03E5A923DB9B0800E33D2A /* KodiConfigService.swift */; };
-		9D03E5AD23DBA22800E33D2A /* KodiConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D03E5A923DB9B0800E33D2A /* KodiConfigService.swift */; };
+		9D03E5AA23DB9B0800E33D2A /* ConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D03E5A923DB9B0800E33D2A /* ConfigService.swift */; };
+		9D03E5AB23DBA13700E33D2A /* ConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D03E5A923DB9B0800E33D2A /* ConfigService.swift */; };
+		9D03E5AC23DBA21E00E33D2A /* ConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D03E5A923DB9B0800E33D2A /* ConfigService.swift */; };
+		9D03E5AD23DBA22800E33D2A /* ConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D03E5A923DB9B0800E33D2A /* ConfigService.swift */; };
 		9D03E5AF23DBA4C600E33D2A /* KodiConfigSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D03E5AE23DBA4C600E33D2A /* KodiConfigSummary.swift */; };
 		9D04D059235110E100BBC9C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D058235110E100BBC9C1 /* AppDelegate.swift */; };
 		9D04D05B235110E100BBC9C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D05A235110E100BBC9C1 /* SceneDelegate.swift */; };
@@ -92,7 +92,7 @@
 
 /* Begin PBXFileReference section */
 		9D03E5A723DB8C4900E33D2A /* KodiConfigEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KodiConfigEditor.swift; sourceTree = "<group>"; };
-		9D03E5A923DB9B0800E33D2A /* KodiConfigService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KodiConfigService.swift; sourceTree = "<group>"; };
+		9D03E5A923DB9B0800E33D2A /* ConfigService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigService.swift; sourceTree = "<group>"; };
 		9D03E5AE23DBA4C600E33D2A /* KodiConfigSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KodiConfigSummary.swift; sourceTree = "<group>"; };
 		9D04D055235110E100BBC9C1 /* Send2Kodi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Send2Kodi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D04D058235110E100BBC9C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -247,7 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				9D04D091235262DA00BBC9C1 /* KodiService.swift */,
-				9D03E5A923DB9B0800E33D2A /* KodiConfigService.swift */,
+				9D03E5A923DB9B0800E33D2A /* ConfigService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -481,7 +481,7 @@
 			files = (
 				9DF5551F23E1E5E8009E5083 /* LMSConfig.swift in Sources */,
 				9D04D08C235117F200BBC9C1 /* KodiConfig.swift in Sources */,
-				9D03E5AA23DB9B0800E33D2A /* KodiConfigService.swift in Sources */,
+				9D03E5AA23DB9B0800E33D2A /* ConfigService.swift in Sources */,
 				9D04D059235110E100BBC9C1 /* AppDelegate.swift in Sources */,
 				9DF5552423E1E821009E5083 /* KodiView.swift in Sources */,
 				9DF5552623E1EB03009E5083 /* LMSView.swift in Sources */,
@@ -499,7 +499,7 @@
 			files = (
 				9DF5552723E223F7009E5083 /* LMSConfig.swift in Sources */,
 				9D04D0972357B5CC00BBC9C1 /* KodiConfig.swift in Sources */,
-				9D03E5AB23DBA13700E33D2A /* KodiConfigService.swift in Sources */,
+				9D03E5AB23DBA13700E33D2A /* ConfigService.swift in Sources */,
 				9D04D093235262DA00BBC9C1 /* KodiService.swift in Sources */,
 				9D04D070235110E500BBC9C1 /* Send2KodiTests.swift in Sources */,
 			);
@@ -518,7 +518,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D5A9C6123679E400074519B /* KodiConfig.swift in Sources */,
-				9D03E5AC23DBA21E00E33D2A /* KodiConfigService.swift in Sources */,
+				9D03E5AC23DBA21E00E33D2A /* ConfigService.swift in Sources */,
 				9D5A9C6323679E440074519B /* KodiService.swift in Sources */,
 				9DF5552023E1E5E8009E5083 /* LMSConfig.swift in Sources */,
 				9D04D0A1235A68A200BBC9C1 /* ActionRequestHandler.swift in Sources */,
@@ -530,7 +530,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D5A9C6223679E400074519B /* KodiConfig.swift in Sources */,
-				9D03E5AD23DBA22800E33D2A /* KodiConfigService.swift in Sources */,
+				9D03E5AD23DBA22800E33D2A /* ConfigService.swift in Sources */,
 				9D5A9C6423679E440074519B /* KodiService.swift in Sources */,
 				9DF5552123E1E5E8009E5083 /* LMSConfig.swift in Sources */,
 				9D052493236381EF0063CC05 /* ShareViewController.swift in Sources */,
