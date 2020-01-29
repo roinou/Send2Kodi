@@ -10,42 +10,40 @@ import SwiftUI
 
 struct ContentView: View {
  
-    @EnvironmentObject var config: KodiConfig
+    @Environment(\.editMode) var mode
+    @EnvironmentObject var config: KodiConfigService
     
-    @EnvironmentObject var service: KodiService
+    @State var draftConfig = KodiConfig.default
+    
+    @State var currentConfig: KodiConfig
     
     var body: some View {
-        
-        // proxy the text field String to allow on-the-fly set
-        let portProxy = Binding<String>(
-            get: { "\(self.config.port)" },
-            set: {
-                if let value = NumberFormatter().number(from: $0) {
-                    self.config.port = value.intValue
-                }
-            }
-        )
-        
         return VStack() {
+            HStack() {
+                if self.mode?.wrappedValue == .active {
+                    Button("Cancel") {
+                        self.draftConfig = self.config.read()
+                        self.mode?.animation().wrappedValue = .inactive
+                    }
+                }
+                Spacer()
+                EditButton()
+            }
             Text(verbatim: "Kodi Settings")
                 .font(.title)
                 .fontWeight(.medium)
             Divider()
-            HStack() {
-//                Text("Host")
-                TextField("Host", text: $config.host)
-            }
-            Divider()
-            HStack() {
-//                Text("Port")
-                TextField("Port", text: portProxy)
-                    .keyboardType(.asciiCapableNumberPad)
-            }
-            Divider()
-            Button(action: {
-                self.service.test()
-            }) {
-                Text("Test")
+            if self.mode?.wrappedValue == .inactive {
+                KodiConfigSummary(config: currentConfig)
+            } else {
+                KodiConfigEditor(config: $draftConfig)
+                    .onAppear {
+                        self.draftConfig = self.config.read()
+                    }
+                    .onDisappear {
+                        self.currentConfig = self.draftConfig
+                        self.config.update(self.draftConfig)
+                    }
             }
             Spacer()
         }
@@ -55,9 +53,8 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        let conf = KodiConfig()
-        return ContentView()
+        let conf = KodiConfigService()
+        return ContentView(currentConfig: .default)
             .environmentObject(conf)
-            .environmentObject(KodiService(config: conf))
     }
 }

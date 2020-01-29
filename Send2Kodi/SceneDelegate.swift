@@ -18,13 +18,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-
-        // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView()
         
-        let userDefaults = UserDefaults(suiteName: "group.be.vershina.Send2Kodi") ?? .standard
-        let config = KodiConfig(userDefaults)
+        let userDefaults = UserDefaults(suiteName: "group.be.vershina.Send2Kodi2") ?? .standard
+        let config = KodiConfigService(userDefaults)
         let service: KodiService = .init(config: config)
+        
+        // Create the SwiftUI view that provides the window contents.
+        let contentView = ContentView(currentConfig: config.read())
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {

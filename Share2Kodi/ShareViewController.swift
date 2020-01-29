@@ -21,8 +21,8 @@ class ShareViewController: SLComposeServiceViewController {
         let itemProvider = extensionItem.attachments?.first!
         if itemProvider?.hasItemConformingToTypeIdentifier("public.plain-text") ?? false {
             itemProvider?.loadItem(forTypeIdentifier: "public.plain-text", options: nil, completionHandler: { (item, error) in
-                let userDefaults = UserDefaults(suiteName: "group.be.vershina.Send2Kodi") ?? .standard
-                let config = KodiConfig(userDefaults)
+                let userDefaults = UserDefaults(suiteName: "group.be.vershina.Send2Kodi2") ?? .standard
+                let config = KodiConfigService(userDefaults)
                 let kodiService = KodiService.init(config: config)
 
                 if let youtubeId = kodiService.extractYoutubeId(item! as! String) {

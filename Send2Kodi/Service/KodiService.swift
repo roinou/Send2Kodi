@@ -11,12 +11,12 @@ import SwiftUI
 
 class KodiService: ObservableObject {
 
-    let config: KodiConfig
+    let config: KodiConfigService
     
     private let session: URLSession
     private let decoder: JSONDecoder
 
-    init(config: KodiConfig, session: URLSession = .shared, decoder: JSONDecoder = .init()) {
+    init(config: KodiConfigService, session: URLSession = .shared, decoder: JSONDecoder = .init()) {
         self.session = session
         self.decoder = decoder
         
@@ -31,7 +31,8 @@ class KodiService: ObservableObject {
         return ret
     }
     
-    func test() {
+    /// calls the ShowNotification method
+    func notificationTest() {
         var req = URLRequest(url: kodiUrl())
         req.setValue("application/json", forHTTPHeaderField: "Content-Type")
         req.httpMethod = "POST"
