@@ -27,7 +27,13 @@ class LMSService: ObservableObject, YoutubeIDExtract {
         return ret
     }
     
-    func send(_ id: String) {
+    func send(_ idOrUrl: String) {
+        if let youtubeId = self.extractYoutubeId(idOrUrl) {
+            self.performCall(youtubeId)
+        }
+    }
+    
+    private func performCall(_ id: String) {
         let queryItems = [
             URLQueryItem(name: "p0", value: "playlist"),
             URLQueryItem(name: "p1", value: "play"),

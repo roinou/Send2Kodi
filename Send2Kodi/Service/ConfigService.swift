@@ -69,8 +69,8 @@ class ConfigService: ObservableObject {
         get { defaults.string(forKey: Keys.lmsHost)! }
     }
     var lmsPort: Int {
-        set { defaults.set(newValue, forKey: Keys.port) }
-        get { defaults.integer(forKey: Keys.port) }
+        set { defaults.set(newValue, forKey: Keys.lmsPort) }
+        get { defaults.integer(forKey: Keys.lmsPort) }
     }
     var lmsPlayer: String {
         set { defaults.set(newValue, forKey: Keys.lmsPlayer) }
