@@ -40,6 +40,15 @@
 		9D5A9C6223679E400074519B /* KodiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D08B235117F100BBC9C1 /* KodiConfig.swift */; };
 		9D5A9C6323679E440074519B /* KodiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D091235262DA00BBC9C1 /* KodiService.swift */; };
 		9D5A9C6423679E440074519B /* KodiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D091235262DA00BBC9C1 /* KodiService.swift */; };
+		9D7C5FB423E312DB005A06E9 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D7C5FB323E312DB005A06E9 /* Media.xcassets */; };
+		9D7C5FB623E312DB005A06E9 /* ActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7C5FB523E312DB005A06E9 /* ActionRequestHandler.swift */; };
+		9D7C5FB823E312DB005A06E9 /* Action.js in Resources */ = {isa = PBXBuildFile; fileRef = 9D7C5FB723E312DB005A06E9 /* Action.js */; };
+		9D7C5FBC23E312DB005A06E9 /* Send2LMS.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9D7C5FB123E312DB005A06E9 /* Send2LMS.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9D7C5FC123E31505005A06E9 /* ConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D03E5A923DB9B0800E33D2A /* ConfigService.swift */; };
+		9D7C5FC223E3150F005A06E9 /* LMSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5552823E226E2009E5083 /* LMSService.swift */; };
+		9D7C5FC323E3150F005A06E9 /* YoutubeIDExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D469A7923E2C6FF00E17FE9 /* YoutubeIDExtract.swift */; };
+		9D7C5FC423E3150F005A06E9 /* KodiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D08B235117F100BBC9C1 /* KodiConfig.swift */; };
+		9D7C5FC523E3150F005A06E9 /* LMSConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5551E23E1E5E8009E5083 /* LMSConfig.swift */; };
 		9DF5551F23E1E5E8009E5083 /* LMSConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5551E23E1E5E8009E5083 /* LMSConfig.swift */; };
 		9DF5552023E1E5E8009E5083 /* LMSConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5551E23E1E5E8009E5083 /* LMSConfig.swift */; };
 		9DF5552123E1E5E8009E5083 /* LMSConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5551E23E1E5E8009E5083 /* LMSConfig.swift */; };
@@ -47,7 +56,6 @@
 		9DF5552623E1EB03009E5083 /* LMSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5552523E1EB03009E5083 /* LMSView.swift */; };
 		9DF5552723E223F7009E5083 /* LMSConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5551E23E1E5E8009E5083 /* LMSConfig.swift */; };
 		9DF5552923E226E2009E5083 /* LMSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5552823E226E2009E5083 /* LMSService.swift */; };
-		9DF5552A23E226E2009E5083 /* LMSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5552823E226E2009E5083 /* LMSService.swift */; };
 		9DF5552B23E226E2009E5083 /* LMSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5552823E226E2009E5083 /* LMSService.swift */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +88,13 @@
 			remoteGlobalIDString = 9D05248F236381EF0063CC05;
 			remoteInfo = Share2Kodi;
 		};
+		9D7C5FBA23E312DB005A06E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D04D04D235110E100BBC9C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D7C5FB023E312DB005A06E9;
+			remoteInfo = Send2LMS;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -91,6 +106,7 @@
 			files = (
 				9D05249A236381EF0063CC05 /* Share2Kodi.appex in Embed App Extensions */,
 				9D04D0A7235A68A200BBC9C1 /* SendYouTube2Kodi.appex in Embed App Extensions */,
+				9D7C5FBC23E312DB005A06E9 /* Send2LMS.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,6 +146,12 @@
 		9D30C1BE236243DB006E3898 /* Send2Kodi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Send2Kodi.entitlements; sourceTree = "<group>"; };
 		9D30C1BF236248D0006E3898 /* SendYouTube2Kodi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SendYouTube2Kodi.entitlements; sourceTree = "<group>"; };
 		9D469A7923E2C6FF00E17FE9 /* YoutubeIDExtract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeIDExtract.swift; sourceTree = "<group>"; };
+		9D7C5FB123E312DB005A06E9 /* Send2LMS.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Send2LMS.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D7C5FB323E312DB005A06E9 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		9D7C5FB523E312DB005A06E9 /* ActionRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionRequestHandler.swift; sourceTree = "<group>"; };
+		9D7C5FB723E312DB005A06E9 /* Action.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Action.js; sourceTree = "<group>"; };
+		9D7C5FB923E312DB005A06E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D7C5FC023E31351005A06E9 /* Send2LMS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Send2LMS.entitlements; sourceTree = "<group>"; };
 		9DF5551E23E1E5E8009E5083 /* LMSConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMSConfig.swift; sourceTree = "<group>"; };
 		9DF5552323E1E821009E5083 /* KodiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KodiView.swift; sourceTree = "<group>"; };
 		9DF5552523E1EB03009E5083 /* LMSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMSView.swift; sourceTree = "<group>"; };
@@ -172,6 +194,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9D7C5FAE23E312DB005A06E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -183,6 +212,7 @@
 				9D04D079235110E500BBC9C1 /* Send2KodiUITests */,
 				9D04D09D235A68A100BBC9C1 /* SendYouTube2Kodi */,
 				9D052491236381EF0063CC05 /* Share2Kodi */,
+				9D7C5FB223E312DB005A06E9 /* Send2LMS */,
 				9D04D056235110E100BBC9C1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -195,6 +225,7 @@
 				9D04D076235110E500BBC9C1 /* Send2KodiUITests.xctest */,
 				9D04D09C235A68A100BBC9C1 /* SendYouTube2Kodi.appex */,
 				9D052490236381EF0063CC05 /* Share2Kodi.appex */,
+				9D7C5FB123E312DB005A06E9 /* Send2LMS.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -286,6 +317,18 @@
 			path = Share2Kodi;
 			sourceTree = "<group>";
 		};
+		9D7C5FB223E312DB005A06E9 /* Send2LMS */ = {
+			isa = PBXGroup;
+			children = (
+				9D7C5FC023E31351005A06E9 /* Send2LMS.entitlements */,
+				9D7C5FB323E312DB005A06E9 /* Media.xcassets */,
+				9D7C5FB523E312DB005A06E9 /* ActionRequestHandler.swift */,
+				9D7C5FB723E312DB005A06E9 /* Action.js */,
+				9D7C5FB923E312DB005A06E9 /* Info.plist */,
+			);
+			path = Send2LMS;
+			sourceTree = "<group>";
+		};
 		9DF5552223E1E6D2009E5083 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -314,6 +357,7 @@
 			dependencies = (
 				9D04D0A6235A68A200BBC9C1 /* PBXTargetDependency */,
 				9D052499236381EF0063CC05 /* PBXTargetDependency */,
+				9D7C5FBB23E312DB005A06E9 /* PBXTargetDependency */,
 			);
 			name = Send2Kodi;
 			productName = Send2Kodi;
@@ -390,13 +434,30 @@
 			productReference = 9D052490236381EF0063CC05 /* Share2Kodi.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		9D7C5FB023E312DB005A06E9 /* Send2LMS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D7C5FBF23E312DB005A06E9 /* Build configuration list for PBXNativeTarget "Send2LMS" */;
+			buildPhases = (
+				9D7C5FAD23E312DB005A06E9 /* Sources */,
+				9D7C5FAE23E312DB005A06E9 /* Frameworks */,
+				9D7C5FAF23E312DB005A06E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Send2LMS;
+			productName = Send2LMS;
+			productReference = 9D7C5FB123E312DB005A06E9 /* Send2LMS.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		9D04D04D235110E100BBC9C1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Erwan Lacoste";
 				TargetAttributes = {
@@ -416,6 +477,9 @@
 					};
 					9D05248F236381EF0063CC05 = {
 						CreatedOnToolsVersion = 11.0;
+					};
+					9D7C5FB023E312DB005A06E9 = {
+						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
 			};
@@ -437,6 +501,7 @@
 				9D04D075235110E500BBC9C1 /* Send2KodiUITests */,
 				9D04D09B235A68A100BBC9C1 /* SendYouTube2Kodi */,
 				9D05248F236381EF0063CC05 /* Share2Kodi */,
+				9D7C5FB023E312DB005A06E9 /* Send2LMS */,
 			);
 		};
 /* End PBXProject section */
@@ -480,6 +545,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D052496236381EF0063CC05 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D7C5FAF23E312DB005A06E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D7C5FB823E312DB005A06E9 /* Action.js in Resources */,
+				9D7C5FB423E312DB005A06E9 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,7 +605,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DF5552A23E226E2009E5083 /* LMSService.swift in Sources */,
 				9D5A9C6123679E400074519B /* KodiConfig.swift in Sources */,
 				9D03E5AC23DBA21E00E33D2A /* ConfigService.swift in Sources */,
 				9D469A7C23E2C6FF00E17FE9 /* YoutubeIDExtract.swift in Sources */,
@@ -552,6 +625,19 @@
 				9D5A9C6423679E440074519B /* KodiService.swift in Sources */,
 				9DF5552123E1E5E8009E5083 /* LMSConfig.swift in Sources */,
 				9D052493236381EF0063CC05 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D7C5FAD23E312DB005A06E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D7C5FC223E3150F005A06E9 /* LMSService.swift in Sources */,
+				9D7C5FC323E3150F005A06E9 /* YoutubeIDExtract.swift in Sources */,
+				9D7C5FC423E3150F005A06E9 /* KodiConfig.swift in Sources */,
+				9D7C5FC523E3150F005A06E9 /* LMSConfig.swift in Sources */,
+				9D7C5FC123E31505005A06E9 /* ConfigService.swift in Sources */,
+				9D7C5FB623E312DB005A06E9 /* ActionRequestHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,6 +663,11 @@
 			isa = PBXTargetDependency;
 			target = 9D05248F236381EF0063CC05 /* Share2Kodi */;
 			targetProxy = 9D052498236381EF0063CC05 /* PBXContainerItemProxy */;
+		};
+		9D7C5FBB23E312DB005A06E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D7C5FB023E312DB005A06E9 /* Send2LMS */;
+			targetProxy = 9D7C5FBA23E312DB005A06E9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -940,6 +1031,50 @@
 			};
 			name = Release;
 		};
+		9D7C5FBD23E312DB005A06E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Send2LMS/Send2LMS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8A5VS6Y5QS;
+				INFOPLIST_FILE = Send2LMS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = be.vershina.Send2Kodi.Send2LMS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D7C5FBE23E312DB005A06E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Send2LMS/Send2LMS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8A5VS6Y5QS;
+				INFOPLIST_FILE = Send2LMS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = be.vershina.Send2Kodi.Send2LMS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -993,6 +1128,15 @@
 			buildConfigurations = (
 				9D05249B236381EF0063CC05 /* Debug */,
 				9D05249C236381EF0063CC05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D7C5FBF23E312DB005A06E9 /* Build configuration list for PBXNativeTarget "Send2LMS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D7C5FBD23E312DB005A06E9 /* Debug */,
+				9D7C5FBE23E312DB005A06E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
