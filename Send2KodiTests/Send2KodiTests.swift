@@ -32,6 +32,8 @@ class Send2KodiTests: XCTestCase {
         XCTAssertEqual("my-_id", service!.extractYoutubeId(url))
         url = "https://youtu.be/my-_id"
         XCTAssertEqual("my-_id", service!.extractYoutubeId(url))
+        url = "my-_id"
+        XCTAssertEqual("my-_id", service!.extractYoutubeId(url))
     }
     func testRegexKo() {
         var url: String

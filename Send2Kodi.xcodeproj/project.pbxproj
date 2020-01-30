@@ -32,6 +32,10 @@
 		9D052493236381EF0063CC05 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D052492236381EF0063CC05 /* ShareViewController.swift */; };
 		9D052496236381EF0063CC05 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D052494236381EF0063CC05 /* MainInterface.storyboard */; };
 		9D05249A236381EF0063CC05 /* Share2Kodi.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9D052490236381EF0063CC05 /* Share2Kodi.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9D469A7A23E2C6FF00E17FE9 /* YoutubeIDExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D469A7923E2C6FF00E17FE9 /* YoutubeIDExtract.swift */; };
+		9D469A7B23E2C6FF00E17FE9 /* YoutubeIDExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D469A7923E2C6FF00E17FE9 /* YoutubeIDExtract.swift */; };
+		9D469A7C23E2C6FF00E17FE9 /* YoutubeIDExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D469A7923E2C6FF00E17FE9 /* YoutubeIDExtract.swift */; };
+		9D469A7D23E2C6FF00E17FE9 /* YoutubeIDExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D469A7923E2C6FF00E17FE9 /* YoutubeIDExtract.swift */; };
 		9D5A9C6123679E400074519B /* KodiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D08B235117F100BBC9C1 /* KodiConfig.swift */; };
 		9D5A9C6223679E400074519B /* KodiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D08B235117F100BBC9C1 /* KodiConfig.swift */; };
 		9D5A9C6323679E440074519B /* KodiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D091235262DA00BBC9C1 /* KodiService.swift */; };
@@ -42,6 +46,9 @@
 		9DF5552423E1E821009E5083 /* KodiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5552323E1E821009E5083 /* KodiView.swift */; };
 		9DF5552623E1EB03009E5083 /* LMSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5552523E1EB03009E5083 /* LMSView.swift */; };
 		9DF5552723E223F7009E5083 /* LMSConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5551E23E1E5E8009E5083 /* LMSConfig.swift */; };
+		9DF5552923E226E2009E5083 /* LMSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5552823E226E2009E5083 /* LMSService.swift */; };
+		9DF5552A23E226E2009E5083 /* LMSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5552823E226E2009E5083 /* LMSService.swift */; };
+		9DF5552B23E226E2009E5083 /* LMSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5552823E226E2009E5083 /* LMSService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,9 +129,11 @@
 		9D05249E236381FF0063CC05 /* Share2Kodi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Share2Kodi.entitlements; sourceTree = "<group>"; };
 		9D30C1BE236243DB006E3898 /* Send2Kodi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Send2Kodi.entitlements; sourceTree = "<group>"; };
 		9D30C1BF236248D0006E3898 /* SendYouTube2Kodi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SendYouTube2Kodi.entitlements; sourceTree = "<group>"; };
+		9D469A7923E2C6FF00E17FE9 /* YoutubeIDExtract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeIDExtract.swift; sourceTree = "<group>"; };
 		9DF5551E23E1E5E8009E5083 /* LMSConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMSConfig.swift; sourceTree = "<group>"; };
 		9DF5552323E1E821009E5083 /* KodiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KodiView.swift; sourceTree = "<group>"; };
 		9DF5552523E1EB03009E5083 /* LMSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMSView.swift; sourceTree = "<group>"; };
+		9DF5552823E226E2009E5083 /* LMSService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMSService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +257,8 @@
 			children = (
 				9D04D091235262DA00BBC9C1 /* KodiService.swift */,
 				9D03E5A923DB9B0800E33D2A /* ConfigService.swift */,
+				9DF5552823E226E2009E5083 /* LMSService.swift */,
+				9D469A7923E2C6FF00E17FE9 /* YoutubeIDExtract.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -479,12 +490,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DF5552923E226E2009E5083 /* LMSService.swift in Sources */,
 				9DF5551F23E1E5E8009E5083 /* LMSConfig.swift in Sources */,
 				9D04D08C235117F200BBC9C1 /* KodiConfig.swift in Sources */,
 				9D03E5AA23DB9B0800E33D2A /* ConfigService.swift in Sources */,
 				9D04D059235110E100BBC9C1 /* AppDelegate.swift in Sources */,
 				9DF5552423E1E821009E5083 /* KodiView.swift in Sources */,
 				9DF5552623E1EB03009E5083 /* LMSView.swift in Sources */,
+				9D469A7A23E2C6FF00E17FE9 /* YoutubeIDExtract.swift in Sources */,
 				9D04D092235262DA00BBC9C1 /* KodiService.swift in Sources */,
 				9D04D05B235110E100BBC9C1 /* SceneDelegate.swift in Sources */,
 				9D03E5AF23DBA4C600E33D2A /* KodiConfigSummary.swift in Sources */,
@@ -500,6 +513,7 @@
 				9DF5552723E223F7009E5083 /* LMSConfig.swift in Sources */,
 				9D04D0972357B5CC00BBC9C1 /* KodiConfig.swift in Sources */,
 				9D03E5AB23DBA13700E33D2A /* ConfigService.swift in Sources */,
+				9D469A7B23E2C6FF00E17FE9 /* YoutubeIDExtract.swift in Sources */,
 				9D04D093235262DA00BBC9C1 /* KodiService.swift in Sources */,
 				9D04D070235110E500BBC9C1 /* Send2KodiTests.swift in Sources */,
 			);
@@ -517,8 +531,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DF5552A23E226E2009E5083 /* LMSService.swift in Sources */,
 				9D5A9C6123679E400074519B /* KodiConfig.swift in Sources */,
 				9D03E5AC23DBA21E00E33D2A /* ConfigService.swift in Sources */,
+				9D469A7C23E2C6FF00E17FE9 /* YoutubeIDExtract.swift in Sources */,
 				9D5A9C6323679E440074519B /* KodiService.swift in Sources */,
 				9DF5552023E1E5E8009E5083 /* LMSConfig.swift in Sources */,
 				9D04D0A1235A68A200BBC9C1 /* ActionRequestHandler.swift in Sources */,
@@ -529,8 +545,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DF5552B23E226E2009E5083 /* LMSService.swift in Sources */,
 				9D5A9C6223679E400074519B /* KodiConfig.swift in Sources */,
 				9D03E5AD23DBA22800E33D2A /* ConfigService.swift in Sources */,
+				9D469A7D23E2C6FF00E17FE9 /* YoutubeIDExtract.swift in Sources */,
 				9D5A9C6423679E440074519B /* KodiService.swift in Sources */,
 				9DF5552123E1E5E8009E5083 /* LMSConfig.swift in Sources */,
 				9D052493236381EF0063CC05 /* ShareViewController.swift in Sources */,

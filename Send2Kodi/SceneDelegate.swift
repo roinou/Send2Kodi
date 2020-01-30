@@ -22,6 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let userDefaults = UserDefaults(suiteName: "group.be.vershina.Send2Kodi2") ?? .standard
         let config = ConfigService(userDefaults)
         let service: KodiService = .init(config: config)
+        let lmsService: LMSService = .init(config: config)
         
         // Create the SwiftUI view that provides the window contents.
         let contentView = ContentView(draftKodiConfig: config.read(), draftLMSConfig: config.read())
@@ -33,6 +34,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 rootView: contentView
                     .environmentObject(config)
                     .environmentObject(service)
+                    .environmentObject(lmsService)
             )
             self.window = window
             window.makeKeyAndVisible()

@@ -11,6 +11,7 @@ import SwiftUI
 struct LMSView: View {
     
     @EnvironmentObject var config: ConfigService
+    @EnvironmentObject var service: LMSService
     @Environment(\.editMode) var mode
     
     @Binding var draftConfig: LMSConfig
@@ -57,6 +58,12 @@ struct LMSView: View {
                     Divider()
                 }
                 .padding(.all)
+                .onAppear {
+                    self.draftConfig = self.config.read()
+                }
+                .onDisappear {
+                    self.config.update(self.draftConfig)
+                }
             }
         }
     }
