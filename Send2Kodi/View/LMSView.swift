@@ -53,7 +53,6 @@ struct LMSView: View {
                     HStack() {
                         Text("Player")
                         TextField("Player", text: $draftConfig.player)
-                            .keyboardType(.asciiCapableNumberPad)
                     }
                     Divider()
                 }
