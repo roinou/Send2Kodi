@@ -8,7 +8,7 @@
 
 import Foundation
 
-class KodiService: ObservableObject, YoutubeIDExtract {
+class KodiService: ObservableObject, YoutubeIDExtract, ShareService {
 
     let config: ConfigService
     
@@ -60,7 +60,7 @@ class KodiService: ObservableObject, YoutubeIDExtract {
         task.resume()
     }
     
-    func send2kodi(id: String) {
+    func performCall(id: String) {
         let url = kodiUrl()
         print("sending \(id) to \(url)")
         

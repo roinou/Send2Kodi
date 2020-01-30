@@ -40,9 +40,20 @@
 		9D5A9C6223679E400074519B /* KodiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D08B235117F100BBC9C1 /* KodiConfig.swift */; };
 		9D5A9C6323679E440074519B /* KodiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D091235262DA00BBC9C1 /* KodiService.swift */; };
 		9D5A9C6423679E440074519B /* KodiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D091235262DA00BBC9C1 /* KodiService.swift */; };
+		9D78388923E35B06001DD1AE /* ShareService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D78388823E35B06001DD1AE /* ShareService.swift */; };
+		9D78388A23E35B06001DD1AE /* ShareService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D78388823E35B06001DD1AE /* ShareService.swift */; };
+		9D78388B23E35B06001DD1AE /* ShareService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D78388823E35B06001DD1AE /* ShareService.swift */; };
+		9D78388C23E35B06001DD1AE /* ShareService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D78388823E35B06001DD1AE /* ShareService.swift */; };
+		9D78389223E36094001DD1AE /* Action.js in Resources */ = {isa = PBXBuildFile; fileRef = 9D04D0A2235A68A200BBC9C1 /* Action.js */; };
+		9D78389323E36094001DD1AE /* Action.js in Resources */ = {isa = PBXBuildFile; fileRef = 9D04D0A2235A68A200BBC9C1 /* Action.js */; };
+		9D78389423E36095001DD1AE /* Action.js in Resources */ = {isa = PBXBuildFile; fileRef = 9D04D0A2235A68A200BBC9C1 /* Action.js */; };
+		9D78389523E360BB001DD1AE /* ActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D0A0235A68A200BBC9C1 /* ActionRequestHandler.swift */; };
+		9D78389623E360BB001DD1AE /* ActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D0A0235A68A200BBC9C1 /* ActionRequestHandler.swift */; };
+		9D78389723E360BB001DD1AE /* ActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04D0A0235A68A200BBC9C1 /* ActionRequestHandler.swift */; };
+		9D78389923E3694C001DD1AE /* KodiActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D78389823E3694C001DD1AE /* KodiActionRequestHandler.swift */; };
+		9D78389A23E3694C001DD1AE /* KodiActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D78389823E3694C001DD1AE /* KodiActionRequestHandler.swift */; };
 		9D7C5FB423E312DB005A06E9 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D7C5FB323E312DB005A06E9 /* Media.xcassets */; };
-		9D7C5FB623E312DB005A06E9 /* ActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7C5FB523E312DB005A06E9 /* ActionRequestHandler.swift */; };
-		9D7C5FB823E312DB005A06E9 /* Action.js in Resources */ = {isa = PBXBuildFile; fileRef = 9D7C5FB723E312DB005A06E9 /* Action.js */; };
+		9D7C5FB623E312DB005A06E9 /* LMSActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7C5FB523E312DB005A06E9 /* LMSActionRequestHandler.swift */; };
 		9D7C5FBC23E312DB005A06E9 /* Send2LMS.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9D7C5FB123E312DB005A06E9 /* Send2LMS.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9D7C5FC123E31505005A06E9 /* ConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D03E5A923DB9B0800E33D2A /* ConfigService.swift */; };
 		9D7C5FC223E3150F005A06E9 /* LMSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5552823E226E2009E5083 /* LMSService.swift */; };
@@ -146,10 +157,11 @@
 		9D30C1BE236243DB006E3898 /* Send2Kodi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Send2Kodi.entitlements; sourceTree = "<group>"; };
 		9D30C1BF236248D0006E3898 /* SendYouTube2Kodi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SendYouTube2Kodi.entitlements; sourceTree = "<group>"; };
 		9D469A7923E2C6FF00E17FE9 /* YoutubeIDExtract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeIDExtract.swift; sourceTree = "<group>"; };
+		9D78388823E35B06001DD1AE /* ShareService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareService.swift; sourceTree = "<group>"; };
+		9D78389823E3694C001DD1AE /* KodiActionRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KodiActionRequestHandler.swift; sourceTree = "<group>"; };
 		9D7C5FB123E312DB005A06E9 /* Send2LMS.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Send2LMS.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D7C5FB323E312DB005A06E9 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
-		9D7C5FB523E312DB005A06E9 /* ActionRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionRequestHandler.swift; sourceTree = "<group>"; };
-		9D7C5FB723E312DB005A06E9 /* Action.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Action.js; sourceTree = "<group>"; };
+		9D7C5FB523E312DB005A06E9 /* LMSActionRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMSActionRequestHandler.swift; sourceTree = "<group>"; };
 		9D7C5FB923E312DB005A06E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D7C5FC023E31351005A06E9 /* Send2LMS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Send2LMS.entitlements; sourceTree = "<group>"; };
 		9DF5551E23E1E5E8009E5083 /* LMSConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMSConfig.swift; sourceTree = "<group>"; };
@@ -234,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				9D30C1BE236243DB006E3898 /* Send2Kodi.entitlements */,
+				9D78388723E35AB2001DD1AE /* Extension */,
 				9D04D08D2352628C00BBC9C1 /* Service */,
 				9DF5552223E1E6D2009E5083 /* View */,
 				9D04D08A235117DB00BBC9C1 /* Model */,
@@ -290,6 +303,7 @@
 				9D03E5A923DB9B0800E33D2A /* ConfigService.swift */,
 				9DF5552823E226E2009E5083 /* LMSService.swift */,
 				9D469A7923E2C6FF00E17FE9 /* YoutubeIDExtract.swift */,
+				9D78388823E35B06001DD1AE /* ShareService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -299,8 +313,7 @@
 			children = (
 				9D30C1BF236248D0006E3898 /* SendYouTube2Kodi.entitlements */,
 				9D04D09E235A68A100BBC9C1 /* Media.xcassets */,
-				9D04D0A0235A68A200BBC9C1 /* ActionRequestHandler.swift */,
-				9D04D0A2235A68A200BBC9C1 /* Action.js */,
+				9D78389823E3694C001DD1AE /* KodiActionRequestHandler.swift */,
 				9D04D0A4235A68A200BBC9C1 /* Info.plist */,
 			);
 			path = SendYouTube2Kodi;
@@ -317,13 +330,21 @@
 			path = Share2Kodi;
 			sourceTree = "<group>";
 		};
+		9D78388723E35AB2001DD1AE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9D04D0A2235A68A200BBC9C1 /* Action.js */,
+				9D04D0A0235A68A200BBC9C1 /* ActionRequestHandler.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		9D7C5FB223E312DB005A06E9 /* Send2LMS */ = {
 			isa = PBXGroup;
 			children = (
 				9D7C5FC023E31351005A06E9 /* Send2LMS.entitlements */,
 				9D7C5FB323E312DB005A06E9 /* Media.xcassets */,
-				9D7C5FB523E312DB005A06E9 /* ActionRequestHandler.swift */,
-				9D7C5FB723E312DB005A06E9 /* Action.js */,
+				9D7C5FB523E312DB005A06E9 /* LMSActionRequestHandler.swift */,
 				9D7C5FB923E312DB005A06E9 /* Info.plist */,
 			);
 			path = Send2LMS;
@@ -513,6 +534,7 @@
 			files = (
 				9D04D065235110E500BBC9C1 /* LaunchScreen.storyboard in Resources */,
 				9D04D062235110E500BBC9C1 /* Preview Assets.xcassets in Resources */,
+				9D78389223E36094001DD1AE /* Action.js in Resources */,
 				9D04D05F235110E500BBC9C1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -544,6 +566,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D78389423E36095001DD1AE /* Action.js in Resources */,
 				9D052496236381EF0063CC05 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -552,7 +575,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D7C5FB823E312DB005A06E9 /* Action.js in Resources */,
+				9D78389323E36094001DD1AE /* Action.js in Resources */,
 				9D7C5FB423E312DB005A06E9 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -569,9 +592,12 @@
 				9D04D08C235117F200BBC9C1 /* KodiConfig.swift in Sources */,
 				9D03E5AA23DB9B0800E33D2A /* ConfigService.swift in Sources */,
 				9D04D059235110E100BBC9C1 /* AppDelegate.swift in Sources */,
+				9D78389923E3694C001DD1AE /* KodiActionRequestHandler.swift in Sources */,
+				9D78388923E35B06001DD1AE /* ShareService.swift in Sources */,
 				9DF5552423E1E821009E5083 /* KodiView.swift in Sources */,
 				9DF5552623E1EB03009E5083 /* LMSView.swift in Sources */,
 				9D469A7A23E2C6FF00E17FE9 /* YoutubeIDExtract.swift in Sources */,
+				9D78389523E360BB001DD1AE /* ActionRequestHandler.swift in Sources */,
 				9D04D092235262DA00BBC9C1 /* KodiService.swift in Sources */,
 				9D04D05B235110E100BBC9C1 /* SceneDelegate.swift in Sources */,
 				9D03E5AF23DBA4C600E33D2A /* KodiConfigSummary.swift in Sources */,
@@ -610,6 +636,8 @@
 				9D469A7C23E2C6FF00E17FE9 /* YoutubeIDExtract.swift in Sources */,
 				9D5A9C6323679E440074519B /* KodiService.swift in Sources */,
 				9DF5552023E1E5E8009E5083 /* LMSConfig.swift in Sources */,
+				9D78389A23E3694C001DD1AE /* KodiActionRequestHandler.swift in Sources */,
+				9D78388A23E35B06001DD1AE /* ShareService.swift in Sources */,
 				9D04D0A1235A68A200BBC9C1 /* ActionRequestHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -619,7 +647,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DF5552B23E226E2009E5083 /* LMSService.swift in Sources */,
+				9D78388B23E35B06001DD1AE /* ShareService.swift in Sources */,
 				9D5A9C6223679E400074519B /* KodiConfig.swift in Sources */,
+				9D78389623E360BB001DD1AE /* ActionRequestHandler.swift in Sources */,
 				9D03E5AD23DBA22800E33D2A /* ConfigService.swift in Sources */,
 				9D469A7D23E2C6FF00E17FE9 /* YoutubeIDExtract.swift in Sources */,
 				9D5A9C6423679E440074519B /* KodiService.swift in Sources */,
@@ -634,10 +664,12 @@
 			files = (
 				9D7C5FC223E3150F005A06E9 /* LMSService.swift in Sources */,
 				9D7C5FC323E3150F005A06E9 /* YoutubeIDExtract.swift in Sources */,
+				9D78389723E360BB001DD1AE /* ActionRequestHandler.swift in Sources */,
 				9D7C5FC423E3150F005A06E9 /* KodiConfig.swift in Sources */,
 				9D7C5FC523E3150F005A06E9 /* LMSConfig.swift in Sources */,
 				9D7C5FC123E31505005A06E9 /* ConfigService.swift in Sources */,
-				9D7C5FB623E312DB005A06E9 /* ActionRequestHandler.swift in Sources */,
+				9D78388C23E35B06001DD1AE /* ShareService.swift in Sources */,
+				9D7C5FB623E312DB005A06E9 /* LMSActionRequestHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -52,7 +52,7 @@
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.services</string>
 		<key>NSExtensionPrincipalClass</key>
-		<string>$(PRODUCT_MODULE_NAME).ActionRequestHandler</string>
+		<string>$(PRODUCT_MODULE_NAME).LMSActionRequestHandler</string>
 	</dict>
 </dict>
 </plist>

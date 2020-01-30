@@ -24,10 +24,8 @@ class ShareViewController: SLComposeServiceViewController {
                 let userDefaults = UserDefaults(suiteName: "group.be.vershina.Send2Kodi2") ?? .standard
                 let config = ConfigService(userDefaults)
                 let kodiService = KodiService.init(config: config)
-
-                if let youtubeId = kodiService.extractYoutubeId(item! as! String) {
-                    kodiService.send2kodi(id: youtubeId)
-                }
+                
+                kodiService.send(item! as! String)
             })
         }
 

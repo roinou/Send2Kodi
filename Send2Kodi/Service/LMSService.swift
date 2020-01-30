@@ -8,7 +8,7 @@
 
 import Foundation
 
-class LMSService: ObservableObject, YoutubeIDExtract {
+class LMSService: ObservableObject, YoutubeIDExtract, ShareService {
    
     let config: ConfigService
     
@@ -19,21 +19,7 @@ class LMSService: ObservableObject, YoutubeIDExtract {
         self.config = config
     }
 
-    func generateUrl() -> URL {
-        let url = "http://\(self.config.lmsHost):\(self.config.lmsPort)/status.html"
-        guard
-            let ret = URL(string: url)
-        else { preconditionFailure("Can't create url components \(url)") }
-        return ret
-    }
-    
-    func send(_ idOrUrl: String) {
-        if let youtubeId = self.extractYoutubeId(idOrUrl) {
-            self.performCall(youtubeId)
-        }
-    }
-    
-    private func performCall(_ id: String) {
+    func performCall(id: String) {
         let queryItems = [
             URLQueryItem(name: "p0", value: "playlist"),
             URLQueryItem(name: "p1", value: "play"),

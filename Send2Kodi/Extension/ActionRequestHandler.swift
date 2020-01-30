@@ -1,19 +1,36 @@
 //
 //  ActionRequestHandler.swift
-//  Send2LMS
+//  SendYouTube2Kodi
 //
-//  Created by Erwan Lacoste on 30/01/2020.
-//  Copyright © 2020 Erwan Lacoste. All rights reserved.
+//  Created by Erwan Lacoste on 18/10/2019.
+//  Copyright © 2019 Erwan Lacoste. All rights reserved.
 //
 
 import UIKit
 import MobileCoreServices
 
-class ActionRequestHandler: NSObject, NSExtensionRequestHandling {
+/// base ActionRequestHandler that will send a Youtube ID to a target system
+protocol ActionRequestHandler: NSObject, NSExtensionRequestHandling {
     
-    var extensionContext: NSExtensionContext?
+    var extensionContext: NSExtensionContext? { get set }
     
-    func beginRequest(with context: NSExtensionContext) {
+    /// init the ShareService to use
+    /// - Parameter config: the ConfigService to use
+    func initService(config: ConfigService) -> ShareService
+    
+    /// delegator for NSExtensionRequestHandling.beginRequest
+    func doBeginRequest(with context: NSExtensionContext)
+}
+
+extension ActionRequestHandler {
+    
+    private func prepareService() -> ShareService {
+        let userDefaults = UserDefaults(suiteName: "group.be.vershina.Send2Kodi2") ?? .standard
+        let config = ConfigService(userDefaults)
+        return self.initService(config: config)
+    }
+
+    func doBeginRequest(with context: NSExtensionContext) {
         // Do not call super in an Action extension with no user interface
         self.extensionContext = context
         
@@ -26,12 +43,8 @@ class ActionRequestHandler: NSObject, NSExtensionRequestHandling {
                     for itemProvider in attachments {
                         if itemProvider.hasItemConformingToTypeIdentifier("public.plain-text") {
                             itemProvider.loadItem(forTypeIdentifier: "public.plain-text", options: nil, completionHandler: { (item, error) in
-                                
-                                let userDefaults = UserDefaults(suiteName: "group.be.vershina.Send2Kodi2") ?? .standard
-                                let config = ConfigService(userDefaults)
-                                let lmsService = LMSService.init(config: config)
-                                
-                                lmsService.send(item! as! String)
+
+                                self.prepareService().send(item! as! String)
                             })
                             break outer
                         }
@@ -60,11 +73,7 @@ class ActionRequestHandler: NSObject, NSExtensionRequestHandling {
         if let url = javaScriptPreprocessingResults["currentUrl"] as! String? {
             print("processing send 2 LMS with url: \(url)")
             
-            let userDefaults = UserDefaults(suiteName: "group.be.vershina.Send2Kodi2") ?? .standard
-            let config = ConfigService(userDefaults)
-            let lmsService = LMSService.init(config: config)
-
-            lmsService.send(url)
+            self.prepareService().send(url)
         }
         self.doneWithResults(nil)
     }
@@ -95,5 +104,4 @@ class ActionRequestHandler: NSObject, NSExtensionRequestHandling {
         // Don't hold on to this after we finished with it.
         self.extensionContext = nil
     }
-    
 }
